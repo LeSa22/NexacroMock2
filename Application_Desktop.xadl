@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ADL version="2.0">
+  <Application id="Application_Desktop" screenid="Desktop_screen">
+    <Layout>
+      <MainFrame id="mainframe" showtitlebar="false" showstatusbar="false" left="0" top="0" width="1920" titletext="FullFrame" showtitleicon="true" progressbarsmooth="false" resizable="false" height="1000">
+        <VFrameSet id="vfr_main" width="1920" showtitlebar="false" showtitleicon="true" separatesize="90,*">
+          <Frames>
+            <ChildFrame id="fr_top" formurl="FrameBase::Form_Top.xfdl" showtitlebar="false" showtitleicon="true" showcascadetitletext="true" border="none" height="70" width="1918"/>
+            <HFrameSet id="hfr_body" separatesize="270,*" width="1920">
+              <Frames>
+                <ChildFrame id="cfr_left" formurl="FrameBase::Form_Left.xfdl" showtitleicon="true" showtitlebar="false" progressbarsmooth="false" border="1px solid #666666"/>
+                <ChildFrame id="cfr_body" formurl="FrameBase::Form_Body.xfdl" showtitlebar="false" showtitleicon="true" progressbarsmooth="false" showcascadetitletext="false" border="1px solid #666666,1px solid #666666,1px solid #666666,none"/>
+              </Frames>
+            </HFrameSet>
+          </Frames>
+        </VFrameSet>
+      </MainFrame>
+    </Layout>
+  </Application>
+</ADL>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Form_Left" titletext="Form_Left" width="350" height="840" onload="Form_Left_onload">
+    <Layouts>
+      <Layout width="350" height="840" screenid="Desktop_screen">
+        <Grid id="grid_menu_left" taborder="0" left="0" top="0" height="1000" width="250" cssclass="left-area"/>
+        <Static id="sta_name" taborder="1" text="Name:" left="15" top="116" width="118" height="25" font="16px/normal &quot;Arial&quot;"/>
+        <Static id="sta_location" taborder="2" text="Location:" left="15" top="185" width="118" height="25" font="16px/normal &quot;Arial&quot;"/>
+        <Calendar id="cal_from" taborder="3" left="15" top="282" width="105" height="39" borderRadius="5px 5px 5px 5px" onchanged="div_menu_calendar_onchanged" dateformat="yyyy-MM-dd"/>
+        <Static id="sta_date" taborder="4" text="Date:" left="15" top="258" width="118" height="25" font="16px/normal &quot;Arial&quot;"/>
+        <Button id="btn_search" taborder="5" text="Search" left="15" top="422" width="215" height="36" background="#20cc66" color="white" font="normal 16px/normal &quot;Arial&quot;" borderRadius="5px 5px 5px 5px" onclick="btn_search_onclick"/>
+        <Combo id="cob_category" taborder="6" left="15" top="360" width="215" height="41" borderRadius="5px 5px 5px 5px" innerdataset="ds_category" datacolumn="Category" codecolumn="id" onitemchanged="cob_category_onitemchanged"/>
+        <Static id="sta_cat" taborder="7" text="Category:" left="15" top="335" width="118" height="25" font="16px/normal &quot;Arial&quot;"/>
+        <Edit id="ipt_name" taborder="8" left="15" top="140" height="40" borderRadius="5px 5px 5px 5px" width="215" cssclass="iptSearch"/>
+        <Edit id="ipt_location" taborder="9" left="15" top="209" width="215" height="40" borderRadius="5px 5px 5px 5px"/>
+        <Calendar id="cal_to" taborder="10" left="130" top="280" width="100" height="41" borderRadius="5px 5px 5px 5px" onchanged="div_menu_calendar_onchanged" dateformat="yyyy-MM-dd"/>
+        <Static id="sta_titleSearch" taborder="11" text="Search Filters" left="15" top="20" height="30" font="normal 24px/normal &quot;Arial&quot;" right="120"/>
+        <Static id="sta_descSearch" taborder="12" text="Search for your race using the" left="15" top="56" font="normal 12pt/normal &quot;Arial&quot;" onclick="Static00_onclick" fittocontents="none" right="120" height="38"/>
+        <Static id="sta_descSearch2" taborder="13" text="fields below!" left="15" top="80" font="normal 12pt/normal &quot;Arial&quot;" onclick="Static00_onclick" fittocontents="none" height="36" width="215"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[this.btn_search_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	const paramName = this.ipt_name.value == null ? "" : this.ipt_name.value.toLowerCase();
+	const paramLocation = this.ipt_location.value == null ? "" : this.ipt_location.value.toLowerCase();
+	const paramCalFrom = this.cal_from.value == null ? "" : this.cal_from.value.replace("/","");
+	const paramCalTo = this.cal_to.value == null ? "" : this.cal_to.value.replace("/","");
+	const paramCategory = this.cob_category.value == null ? "" : this.cob_category.value.toLowerCase();
+	if(paramCalTo != ""){
+		if(paramCalTo < paramCalFrom){
+			this.alert("Error:\nngày kết thúc không được nhỏ hơn ngày bắt đầu.");
+			return;
+		}
+	}
+	
+	nexacro.Application.ds_races.filter(paramName +"&&"+ paramLocation + "&&" + paramCalFrom + "&&" + paramCalTo + "&&" + paramCategory);
+};
+]]></Script>
+    <Objects>
+      <Dataset id="ds_category">
+        <ColumnInfo>
+          <Column id="id" type="STRING" size="256"/>
+          <Column id="Category" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="id"/>
+            <Col id="Category"/>
+          </Row>
+          <Row>
+            <Col id="id">Running</Col>
+            <Col id="Category">Running</Col>
+          </Row>
+          <Row>
+            <Col id="id">Racing boy</Col>
+            <Col id="Category">Racing boy</Col>
+          </Row>
+          <Row>
+            <Col id="id">Racing girl</Col>
+            <Col id="Category">Racing girl</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <InitValue>
+      <Button id="btn_search" accessibilityrole="button" accessibilityenable="true" accessibilitydesclevel="all"/>
+      <Edit id="ipt_name" accessibilityenable="true"/>
+      <Edit id="ipt_location" accessibilityenable="true"/>
+      <Calendar id="cal_from" accessibilityenable="true"/>
+      <Calendar id="cal_to" accessibilityenable="true"/>
+      <Combo id="cob_category" accessibilityrole="combobox"/>
+    </InitValue>
+  </Form>
+</FDL>

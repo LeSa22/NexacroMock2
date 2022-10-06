@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppVariables version="2.0">
+  <Datasets>
+    <Dataset id="ds_races">
+      <ColumnInfo>
+        <Column id="name" type="STRING" size="256"/>
+        <Column id="location" type="STRING" size="256"/>
+        <Column id="category" type="STRING" size="256"/>
+        <Column id="distance" type="STRING" size="256"/>
+        <Column id="date" type="DATE" size="256"/>
+        <Column id="logo_url" type="STRING" size="256"/>
+      </ColumnInfo>
+      <Rows>
+        <Row>
+          <Col id="name">Trần Thị Lê Sa</Col>
+          <Col id="location">Quảng Nam</Col>
+          <Col id="category">Running</Col>
+          <Col id="distance">145678765</Col>
+          <Col id="date">2022/10/17</Col>
+          <Col id="logo_url">theme://images/e6a4a5cfc049ed1933306c24f977dbee--pancake-breakfast-day-camp.jpg</Col>
+        </Row>
+        <Row>
+          <Col id="name">Phạm Hoàng Sơn</Col>
+          <Col id="location">Quảng Nam</Col>
+          <Col id="category">Running</Col>
+          <Col id="distance">3456345</Col>
+          <Col id="date">2022/10/10</Col>
+          <Col id="logo_url">theme://images/images (1).png</Col>
+        </Row>
+        <Row>
+          <Col id="name">Phan Văn Khánh</Col>
+          <Col id="location">Quảng Nam</Col>
+          <Col id="category">Running</Col>
+          <Col id="distance">78956785</Col>
+          <Col id="date">2022/10/12</Col>
+          <Col id="logo_url">theme://images/images.jfif</Col>
+        </Row>
+        <Row>
+          <Col id="name">Huỳnh Thị Hạnh Nguyên</Col>
+          <Col id="location">Đà Nẵng</Col>
+          <Col id="category">Racing girl</Col>
+          <Col id="distance">56759800</Col>
+          <Col id="date">2022/10/16</Col>
+          <Col id="logo_url">theme://images/images.png</Col>
+        </Row>
+        <Row>
+          <Col id="name">Huyỳnh Ngọc Anh</Col>
+          <Col id="location">Quảng Nam</Col>
+          <Col id="category">Running</Col>
+          <Col id="distance">45750790</Col>
+          <Col id="date">2022/10/11</Col>
+          <Col id="logo_url">theme://images/thumb_race131388-logo.bINJ7n.png</Col>
+        </Row>
+        <Row>
+          <Col id="name">Thái Hòa</Col>
+          <Col id="location">Quảng Nam</Col>
+          <Col id="category">Racing boy</Col>
+          <Col id="distance">9089687</Col>
+          <Col id="date">2022/10/29</Col>
+          <Col id="logo_url">theme://images/RunForShareLogo.jpg</Col>
+        </Row>
+        <Row>
+          <Col id="name">Nguyễn Trần Thu Hà</Col>
+          <Col id="location">Quảng Nam</Col>
+          <Col id="category">Running</Col>
+          <Col id="distance">08967567</Col>
+          <Col id="date">2022/10/25</Col>
+          <Col id="logo_url">theme://images/e6a4a5cfc049ed1933306c24f977dbee--pancake-breakfast-day-camp.jpg</Col>
+        </Row>
+        <Row>
+          <Col id="name">Trần Quang Huy</Col>
+          <Col id="location">Quảng Trị</Col>
+          <Col id="category">Running</Col>
+          <Col id="distance">56709689678</Col>
+          <Col id="date">2022/10/03</Col>
+          <Col id="logo_url">theme://images/images (1).png</Col>
+        </Row>
+        <Row>
+          <Col id="name">Thái Thị Hồng</Col>
+          <Col id="location">Quảng Nam</Col>
+          <Col id="category">Running</Col>
+          <Col id="distance">457957584567</Col>
+          <Col id="date">2022/10/09</Col>
+          <Col id="logo_url">theme://images/images.jfif</Col>
+        </Row>
+        <Row>
+          <Col id="name">Đào Thị Quỳnh Thoa</Col>
+          <Col id="location">Quảng Nam</Col>
+          <Col id="category">Running</Col>
+          <Col id="distance">356357468</Col>
+          <Col id="date">2022/10/08</Col>
+          <Col id="logo_url">theme://images/images.png</Col>
+        </Row>
+        <Row>
+          <Col id="name">Nguyễn Thị Đường</Col>
+          <Col id="location">Quảng Nam</Col>
+          <Col id="category">Running</Col>
+          <Col id="distance">4567468579</Col>
+          <Col id="date">2022/10/01</Col>
+          <Col id="logo_url">theme://images/thumb_race131388-logo.bINJ7n.png</Col>
+        </Row>
+        <Row>
+          <Col id="name">Vũ Thị Lan Hương</Col>
+          <Col id="location">Quảng Bình</Col>
+          <Col id="category">Running</Col>
+          <Col id="distance">7806967867</Col>
+          <Col id="date">2022/10/11</Col>
+          <Col id="logo_url">theme://images/RunForShareLogo.jpg</Col>
+        </Row>
+        <Row>
+          <Col id="name">Đỗ Thị Nguyệt</Col>
+          <Col id="location">Quảng Nam</Col>
+          <Col id="category">Running</Col>
+          <Col id="distance">789678678</Col>
+          <Col id="date">2022/10/12</Col>
+          <Col id="logo_url">theme://images/e6a4a5cfc049ed1933306c24f977dbee--pancake-breakfast-day-camp.jpg</Col>
+        </Row>
+        <Row>
+          <Col id="name">Nguyễn Phan Thùy Vân</Col>
+          <Col id="location">Hà Nội</Col>
+          <Col id="category">Racing girl</Col>
+          <Col id="distance">08098908</Col>
+          <Col id="date">2022/10/12</Col>
+          <Col id="logo_url">theme://images/images (1).png</Col>
+        </Row>
+        <Row>
+          <Col id="name">Hoàng Thị Hồng Uyên</Col>
+          <Col id="location">Thái Bình</Col>
+          <Col id="category">Racing boy</Col>
+          <Col id="distance">896786700</Col>
+          <Col id="date">2022/10/12</Col>
+          <Col id="logo_url">theme://images/images.jfif</Col>
+        </Row>
+      </Rows>
+    </Dataset>
+  </Datasets>
+  <Variables/>
+  <DataObjects/>
+</AppVariables>
